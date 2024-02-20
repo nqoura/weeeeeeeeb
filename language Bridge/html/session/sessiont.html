@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>session student</title>
+<link rel="stylesheet" href="../css/style2.css">
+
+</head>
+<body>
+                        
+                        <header class="header" data-header> <!--- راس الصفحة -->
+                                                <div class="container"> <!-- عنصر للهيدر -->
+                                            
+                                                  <a href="#" class="logo"> <!-- شعار الموقع-->
+                                                    <img src="../images/logolan.jpeg" width="100" height="50" alt="">
+                                                  </a>
+                                            
+                                                  <nav class="navbar" data-navbar> <!--- ازرار التنقل بالصفحة -->
+                                            
+                                                    <div class="wrapper">
+                                                      
+                                            
+                                                      <button class="nav-close-btn" aria-label="close menu" data-nav-toggler><!-- زر إغلاق شريط التنقل -->
+                                                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon> <!--ايقونة الاغلاق -->
+                                                      </button>
+                                                    </div>
+                                            
+                                                    <ul class="navbar-list"> <!--- قائمة شريط التنقل -->
+                                            
+                                                      <li class="navbar-item">
+                                                        <a href="../home.html" class="navbar-link" data-nav-link>home</a> <!--- زر home -->
+                                                      </li>
+                                            
+                                                      <li class="navbar-item">
+                                                        <a href="../home.html" class="navbar-link" data-nav-link>About</a><!--- زر التعريف -->
+                                                      </li>
+                                            
+                                                      <li class="navbar-item">
+                                                        <a href="../Trainers.html" class="navbar-link" data-nav-link>Trainers</a>  <!---  زر المدربون-->
+                                                      </li>
+                                            
+                                                      <li class="navbar-item">
+                                                        <a href="../Curricula.html" class="navbar-link" data-nav-link>Courses</a> <!--زر الاخبار -->
+                                                      </li>
+                                            
+                                                      <li class="navbar-item">
+                                                                        <a href="#footer" class="navbar-link" data-nav-link>Contact</a> <!---زر التواصل -->
+                                                                      </li>
+                                            
+                                                    </ul>
+                                            
+                                                  </nav>
+                                            
+                                                  <div class="header-actions"> <!-- أزرار الإجراءات -->
+                                            
+                        
+                                            
+                                                    <a href="" class="btn has-before" > <!-- زر التسجيل -->
+                                                      <span class="span">log out</span>
+                                            
+                                                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                                    </a>
+                                            
+                                                    <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+                                                      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                                                    </button>
+                                            
+                                                  </div>
+                                            
+                                                  <div class="overlay" data-nav-toggler data-overlay></div> <!--- تراكيب القائمة -->
+                                            
+                                                </div>
+                                              </header>
+<section class="section hero">
+                                              <div class="booking-container">
+                                                <h2>Book a session</h2>
+                                        
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <label for="learning-goals">Your goals for learning</label>
+                                                        <textarea id="learning-goals" name="learning-goals" rows="4" required></textarea>
+                                                    </div>
+                                        
+                                                    <div class="form-group">
+                                                        <label for="session-time">Time and date</label>
+                                                        <input type="datetime-local" id="session-time" name="session-time" required>
+                                                    </div>
+                                        
+                                                    <button type="submit"><a href="done.html">The session has been booked</a></button>
+                                                </form>
+                                            </div>
+</section>                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              <footer class="footer" style="background-image: url('./images/footer-bg.png')" id="footer">
+
+                                                <div class="footer-top section">
+                                                  <div class="container grid-list">
+                                            
+                                                    <div class="footer-brand">
+                                            
+                                                      <a href="#" class="logo"><!--اضافة شعار المنصة -->
+                                                        <img src="../images/logolan.jpeg" width="162" height="50" alt="logo logo">
+                                                      </a>
+                                            
+                                                      <p class="footer-brand-text">
+                                                                    A platform for exchanging and learning languages online.
+                                                      </p>
+                                            
+                                                     <!--<div class="wrapper">
+                                                        <span class="span">Add:</span>
+                                            
+                                                        <address class="address">online</address>
+                                                      </div>--> 
+                                            
+                                                      <div class="wrapper1">
+                                                        <span class="span">Call:</span>
+                                            
+                                                        <a href="tel:+966 57579743" class="footer-link">+966 57579743</a>
+                                                      </div>
+                                            
+                                                      <div class="wrapper1">
+                                                        <span class="span">Email:</span>
+                                            
+                                                        <a href="mailto:info@bridge.com" class="footer-link">info@bridge.com</a>
+                                                      </div>
+                                            
+                                                    </div>
+                                            
+                                                    <ul class="footer-list">
+                                            
+                                                      <li>
+                                                        <p class="footer-list-title">Online Platform</p>
+                                                      </li>
+                                            
+                                                     <!--<li>
+                                                        <a href="about" class="footer-link" id="about">About</a>
+                                                      </li>--> 
+                                            
+                                                      <li>
+                                                        <a href="../Curricula.html" class="footer-link">Courses</a>
+                                                      </li>
+                                            
+                                                      <li>
+                                                        <a href="../Trainers.html" class="footer-link">Instructor</a>
+                                                      </li>
+                                            
+                                                     
+                                                     
+                                                      </li>
+                                            
+                                                    </ul>
+                                            
+                                                    <ul class="footer-list">
+                                            
+                                                      <li>
+                                                        <p class="footer-list-title">Links</p>
+                                                      </li>
+                                            
+                                                     <!-- li>
+                                                        <a href="#" class="footer-link">Contact Us</a>
+                                                      </li>--> 
+                                            
+                                                    
+                                                      </li>
+                                            
+                                                      <li>
+                                                        <a href="Login.html" class="footer-link">Sign In/Registration</a>
+                                                      </li>
+                                            
+                                                      <!--  <a href="#" class="footer-link">Coming Soon</a>
+                                                      </li> <li>--> 
+                                                      
+                                            
+                                                    </ul>
+                                            
+                                                    <div class="footer-list">
+                                            
+                                                      <p class="footer-list-title">Contacts</p>
+                                            
+                                                      <p class="footer-list-text">
+                                                        Enter your email address to register to our newsletter subscription
+                                                      </p>
+                                            
+                                                      <form action="" class="newsletter-form">
+                                                        <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+                                            
+                                                        <button type="submit" class="btn has-before">
+                                                          <span class="span">Subscribe</span>
+                                            
+                                                          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                                        </button>
+                                                      </form>
+                                            
+                                                      <ul class="social-list">
+                                            
+                                                       
+                                            
+                                                        <li>
+                                                          <a href="https://www.instagram.com/languagebridge1?igsh=NTc4MTIwNjQ2YQ==" class="social-link">
+                                                            <ion-icon name="logo-instagram"></ion-icon>
+                                                          </a>
+                                                        </li>
+                                            
+                                                        <li>
+                                                          <a href="https://x.com/languagebridge_?s=11&t=O5LNBf8xJ8Cn8VAsSGzt3g" class="social-link">
+                                                            <ion-icon name="logo-twitter"></ion-icon>
+                                                          </a>
+                                                        </li>
+                                            
+                                                        <!--<li>
+                                                          <a href="#" class="social-link">
+                                                            <ion-icon name="logo-youtube"></ion-icon>
+                                                          </a>
+                                                        </li>-->
+                                            
+                                                      </ul>
+                                            
+                                                    </div>
+                                            
+                                                  </div>
+                                                </div>
+                                            
+                                                <div class="footer-bottom">
+                                                                        <div class="container">
+                                                                  
+                                                                          <p class="copyright">
+                                                                                              © Language bridge 2024 
+                                                                          </p>
+                                                                  
+                                                                        </div>
+                                                                      </div>
+                                            
+                                              </footer> 
+                        
+                      - custom js link
+  
+                      <script src="script.js" defer></script>
+                      
+                      
+                         ionicon link
+                      
+                      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                                   
+                                                                                                              
+                                                                                                                       
+                                                                                        
+                                                                        
