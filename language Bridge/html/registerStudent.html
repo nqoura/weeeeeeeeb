@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Login</title>
-<link rel="stylesheet" href="../css/style1.css">
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/login.css">
+<link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+<title>Trainer registeration</title>
 
 </head>
-
 <body>
-<!--صفحة تسجيل دخول للطالب -->
+<!---صفحة تسجيل الطالب -->
 <header class="header" data-header> <!--- راس الصفحة -->
 <div class="container"> <!-- عنصر للهيدر -->
 
@@ -28,19 +30,19 @@
 <ul class="navbar-list"> <!--- قائمة شريط التنقل -->
 
 <li class="navbar-item">
-<a href="../home.html" class="navbar-link" data-nav-link>Home</a> <!--- زر home -->
+<a href="home page.html" class="navbar-link" data-nav-link>Home</a> <!--- زر home -->
 </li>
 
 <li class="navbar-item">
-<a href="../home.html" class="navbar-link" data-nav-link>About</a><!--- زر التعريف -->
+<a href="home page.html#about" class="navbar-link" data-nav-link>About</a><!--- زر التعريف -->
 </li>
 
 <li class="navbar-item">
-<a href="../Trainers.html" class="navbar-link" data-nav-link>Trainers</a>  <!---  زر المدربون-->
+<a href="Trainers.html" class="navbar-link" data-nav-link>Trainers</a>  <!---  زر المدربون-->
 </li>
 
 <li class="navbar-item">
-<a href="../Curricula.html" class="navbar-link" data-nav-link>course</a> <!--زر المناهج -->
+<a href="cources.html" class="navbar-link" data-nav-link>course</a> <!--زر الاخبار -->
 </li>
 
 <li class="navbar-item">
@@ -55,8 +57,8 @@
 
 
 
-<a href="../home.html" class="btn has-before" > <!-- زر التسجيل -->
-<span class="span">Log out</span>
+<a href="Student Login.html" class="btn has-before" > <!-- زر التسجيل -->
+<span class="span">Login</span>
 
 <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
 </a>
@@ -67,50 +69,55 @@
 
 </div>
 
-
+<div class="overlay" data-nav-toggler data-overlay></div> <!--- تراكيب القائمة -->
 
 </div>
 </header>
-
-<section class="section hero">
-<div id="payment-container">
-
-<div class="session-box">
-<div class="session-name">learn english</div>
-<div class="session-name">1 hours</div>
-<div class="session-price">Price: $50.00</div>
+<div class="container2">
+<div class="section1"> 
+<form action="" method="post">
+<h2>registeration</h2>
+<div class="content">
+<div class="input-box1">
+<label for="name">first name</label>
+<input type="text" placeholder="Enter first name" value="yara" name="name" required>
+</div>
+<div class="input-box1">
+<label for="name">last name</label>
+<input type="text" placeholder="Enter last name" value="ahmad" name="name" required>
+</div>
+<div class="input-box1">
+<label for="name">Email</label>
+<input type="email" placeholder="Enter your email" value="ksu@gmail.com" name="email" required>
+</div>
+<div class="input-box1">
+<label for="name">password</label>
+<input type="password" placeholder="Enter your password" value="1234" name="password" required>
+</div>
+<div class="input-box1">
+<label for="location">location</label>
+<input type="text" placeholder="location" value="riyadh" name="location" required>
+</div>
+<div class="input-box1">
+<label for="city">city</label>
+<input type="text" placeholder="city" value="riyadh" name="city" required>
+</div>
+<div class="input-box1">
+<label for="age">age</label>
+<input type="text" placeholder="age" value="22" name="age" required>
+</div>
+<div class="input-box1">
+<label for="image">image</label>
+<input type="file" id="image" accept="image" >
+</div>
+<div class="button-container">
+<button class="submit"><a href="../information/stydy.html">register</a></button>
+</div>
+</div>
+</form></div>
 </div>
 
-<div class="session-box">
-<div class="session-name">learn english speaking and grammar</div>
-<div class="session-name">2 hourse</div>
-<div class="session-price">Price: $100.00</div>
-</div>
-
-<!-- إلخ، أضف المزيد من الجلسات حسب الحاجة -->
-<div id="total-price">
-Total Price: $150.00 <!-- تعديل على السعر الإجمالي -->
-</div>
-
-<div id="payment-button">
-Pay with PayPal
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
-<footer class="footer" style="background-image: url('./images/footer-bg.png')" id="footer">
+<footer class="footer" style="background-image: url('../images/footer-bg.png')" id="footer">
 
 <div class="footer-top section">
 <div class="container grid-list">
@@ -118,18 +125,14 @@ Pay with PayPal
 <div class="footer-brand">
 
 <a href="#" class="logo"><!--اضافة شعار المنصة -->
-<img src="../images/logomd.png" width="162" height="50" alt="logo logo">
+<img src="../images/logolan.jpeg" width="106" height="50" alt="logo logo">
 </a>
 
 <p class="footer-brand-text">
 A platform for exchanging and learning languages online.
 </p>
 
-<!--<div class="wrapper">
-<span class="span">Add:</span>
 
-<address class="address">online</address>
-</div>--> 
 
 <div class="wrapper1">
 <span class="span">Call:</span>
@@ -151,12 +154,10 @@ A platform for exchanging and learning languages online.
 <p class="footer-list-title">Online Platform</p>
 </li>
 
-<!--<li>
-<a href="about" class="footer-link" id="about">About</a>
-</li>--> 
+
 
 <li>
-<a href="../Curricula.html" class="footer-link">Courses</a>
+<a href="cources.html" class="footer-link">Courses</a>
 </li>
 
 <li>
@@ -175,19 +176,16 @@ A platform for exchanging and learning languages online.
 <p class="footer-list-title">Links</p>
 </li>
 
-<!-- li>
-<a href="#" class="footer-link">Contact Us</a>
-</li>--> 
+
 
 
 </li>
 
 <li>
-<a href="Login.html" class="footer-link">Sign In/Registration</a>
+<a href="Student Login.html" class="footer-link">Sign In/Registration</a>
 </li>
 
-<!--  <a href="#" class="footer-link">Coming Soon</a>
-</li> <li>--> 
+
 
 
 </ul>
@@ -226,11 +224,7 @@ Enter your email address to register to our newsletter subscription
 </a>
 </li>
 
-<!--<li>
-<a href="#" class="social-link">
-<ion-icon name="logo-youtube"></ion-icon>
-</a>
-</li>-->
+
 
 </ul>
 
@@ -249,7 +243,7 @@ Enter your email address to register to our newsletter subscription
 </div>
 </div>
 
-</footer>
+</footer> 
 
 - custom js link
 
@@ -263,8 +257,6 @@ ionicon link
 
 
 
+
 </body>
 </html>
-
-
-

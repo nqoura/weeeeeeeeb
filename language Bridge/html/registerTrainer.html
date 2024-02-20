@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../css/login.css">
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<title>Trainer login</title>
+
 </head>
-
 <body>
-
+<!---صفحة تسجيل المعلم  -->
 <header class="header" data-header> <!--- راس الصفحة -->
 <div class="container"> <!-- عنصر للهيدر -->
 
@@ -24,29 +26,29 @@
 </button>
 </div>
 
-<ul class="navbar-list"> <!--- قائمة شريط التنقل -->
+<ul class="navbar-list"> 
 
 <li class="navbar-item">
-<a href="home page.html" class="navbar-link" data-nav-link>Home</a> <!--- زر home -->
+<a href="home page.html" class="navbar-link" data-nav-link>Home</a>  <!--زر home -->
 </li>
 
 <li class="navbar-item">
-<a href="home page.html#about" class="navbar-link" data-nav-link>About</a><!--- زر التعريف -->
+<a href="home page.html#about" class="navbar-link" data-nav-link>About</a><!--زر التعريف --> 
 </li>
 
 <li class="navbar-item">
-<a href="Trainers.html" class="navbar-link" data-nav-link>Trainers</a>  <!---  زر المدربون-->
+<a href="Trainers.html" class="navbar-link" data-nav-link>Trainers</a>  <!--زر المدربون--> 
 </li>
 
 <li class="navbar-item">
-<a href="cources.html" class="navbar-link" data-nav-link>course</a> <!--زر المناهج -->
+<a href="cources.html" class="navbar-link" data-nav-link>course</a> <!--زر الاخبار -->
 </li>
 
 <li class="navbar-item">
 <a href="#footer" class="navbar-link" data-nav-link>Contact</a> <!---زر التواصل -->
 </li>
 
-</ul>
+</ul> 
 
 </nav>
 
@@ -67,41 +69,88 @@
 </div>
 
 
+<div class="overlay" data-nav-toggler data-overlay></div> <!--- تراكيب القائمة -->
 
 </div>
+
 </header>
 
+<br><br><br><br>
+<div class="container2">
+<div class="section1"> 
+<form action="" method="post">
+<h2>registeration</h2>
+<div class="content">
+<div class="input-box1">
+<label for="name">first name</label>
+<input type="text" placeholder="Enter first name" value="Sara" name="name" required>
+</div>
+<div class="input-box1">
+<label for="name">last name</label>
+<input type="text" placeholder="Enter last name" value="Alkoblan" name="name" required>
+</div>
+<div class="input-box1">
+<label for="name">Email</label>
+<input type="email" placeholder="Enter your email" value="ksu_t@gmail.com" name="email" required>
+</div>
+<div class="input-box1">
+<label for="name">password</label>
+<input type="password" placeholder="Enter your password" value="t1234" name="password" required>
+</div>
+<div class="input-box1">
+<label for="nationality">nationality</label>
+<input type="text" placeholder="nationality" value="saudi" name="nationality" required>
+</div>
+<div class="input-box1">
+<label for="city">city</label>
+<input type="text" placeholder="city" value="riyadh" name="city" required>
+</div>
+<div class="input-box1">
+<label for="age">age</label>
+<input type="text" placeholder="age" value="25" name="age" required>
+</div>
+<div class="input-box1">
+<label for="phone">phone</label>
+<input type="phone" placeholder="phone" value="0555555555" name="phone"  required>
+</div>
+<div class="input-box1">
+<label for="file">cv</label>
+<input type="file" id="file" accept="file" >
+</div>
+<div class="input-box1">
+<label for="image">image</label>
+<input type="file" id="image" accept="image" >
+</div>
 
-<!---صفحة تسجيل دخول الطالب -->
-<section class="section hero has-bg-image">
-<div class="container1">
-<div class="wrapper">
-<form action="">
-<h1>login</h1>
-<div class="input-box">
-<input type="email" placeholder="Email" value="ksu@gmail.com" required>
-<i class="bx bxs-user"></i>
-</div>
-<div class="input-box">
-<input type="password" placeholder="password" value="1234" required>
-<i class="bx bxs-lock-alt"></i>
+<div class="input-box1">
+<label for="additional-info">short profile</label>
+<textarea id="additional-info" name="additional-info" rows="4" cols="80"> Best teacher ever</textarea><br>
 </div>
 
-<div class="remember-forgot">
-<label ><input type="checkbox">remember me</label>
-<a href="#">forgot password</a>
+<div class="input-box1">
+<label for="gender">gender</label>
+<select id="gender" name="gender" required>
+<option value="male">female</option>
+<option value="female">male</option>
+</select><br>
+</div>
 
+<div class="input-box1">
+<label for="gender">speaker level</label>
+<select id="gender" name="gender" required>
+<option value="male">native speaker</option>
+<option value="female">fluent speaker</option>
+</select><br>
 </div>
-<button type="submit" class="btn1"> <a href="../information/stydy.html">login</a></button>
-<div class="register-link">
-<p>Don't have an account <a href="registerStudent.html">register</a></p>
-<p>Are you a teacher <a href="loginTrainer.html">login</a></p>
-</div>
-</form>
-</div>                                                
-</div>
-</section>
 
+<div class="button-container">
+<button class="submit"> <a href="../information/trainers.html">register</a></button>
+</div>
+</div>
+</form></div>
+</div>
+
+<br><br><br><br>
 <footer class="footer" style="background-image: url('../images/footer-bg.png')" id="footer">
 
 <div class="footer-top section">
@@ -211,7 +260,6 @@ Enter your email address to register to our newsletter subscription
 
 
 
-
 </ul>
 
 </div>
@@ -229,7 +277,8 @@ Enter your email address to register to our newsletter subscription
 </div>
 </div>
 
-</footer>
+</footer> 
+
 
 - custom js link
 
@@ -243,23 +292,7 @@ ionicon link
 
 
 
+
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
